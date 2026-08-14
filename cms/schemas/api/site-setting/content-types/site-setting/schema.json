@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings",
+    "description": "Hero slideshow and contact details."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heroImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "default": "98495 23572"
+    },
+    "whatsapp": {
+      "type": "string",
+      "default": "919849523572"
+    },
+    "mapUrl": {
+      "type": "string",
+      "default": "https://maps.app.goo.gl/Y4a1oaU1JJQ4yGiFA"
+    },
+    "yearsOfWork": {
+      "type": "string",
+      "default": "25+"
+    },
+    "projectsDelivered": {
+      "type": "string",
+      "default": "1,200+"
+    },
+    "teamSize": {
+      "type": "string",
+      "default": "30"
+    }
+  }
+}

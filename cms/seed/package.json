@@ -1,0 +1,8 @@
+{
+  "name": "om-virat-seed",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node upload.mjs"
+  }
+}

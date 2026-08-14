@@ -1,0 +1,23 @@
+# Strapi CMS is generated locally, not shipped in the repo — see LOCAL-SETUP.md.
+# The content-type source of truth (schemas + routes/controllers/services) lives
+# in cms/schemas/api/; strapi/ is regenerated from it in a few minutes.
+strapi/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+*.tsbuildinfo
+
+# Env files (the .env.example / .env.local.example templates stay tracked)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
