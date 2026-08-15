@@ -1,7 +1,5 @@
-# Strapi CMS is generated locally, not shipped in the repo — see LOCAL-SETUP.md.
-# The content-type source of truth (schemas + routes/controllers/services) lives
-# in cms/schemas/api/; strapi/ is regenerated from it in a few minutes.
-strapi/
+# strapi/ is tracked (Render/Strapi Cloud build it straight from this repo).
+# Its own strapi/.gitignore already excludes node_modules, .tmp, .env, uploads, dist, build.
 
 # Node
 node_modules/
