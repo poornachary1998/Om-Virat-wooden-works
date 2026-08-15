@@ -128,6 +128,10 @@ See **[CMS-GUIDE.md](./CMS-GUIDE.md)** — that's the one to keep open. It cover
 
 Set `NEXT_PUBLIC_STRAPI_URL` on Vercel to your live Strapi address and it works the same.
 
+**Deploying Strapi to Render** — this repo already has a `render.yaml`
+Blueprint and a `strapi/Dockerfile` ready to go. See
+**[DEPLOY-RENDER.md](./DEPLOY-RENDER.md)** for the step-by-step.
+
 **For Google ranking**, the website is only part of it. Also do these:
 
 1. Create a **Google Business Profile** for Om Virat — free, and it drives local map results more than the website does. Category: "Furniture manufacturer" plus "Carpenter". Add your hours, phone, and photos.
