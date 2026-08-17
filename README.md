@@ -1,4 +1,4 @@
-# Om Virat — Next.js website + Strapi CMS
+# Om Sri Virat — Next.js website + Strapi CMS
 
 A two-part setup:
 
@@ -124,7 +124,7 @@ See **[CMS-GUIDE.md](./CMS-GUIDE.md)** — that's the one to keep open. It cover
 | Next.js website | Vercel (vercel.com) | Free tier is enough |
 | Strapi CMS | Railway, Render, or a small VPS | ~₹400–800/month |
 | Photos | Strapi's media library, or Cloudinary | Free tier is enough |
-| Domain | e.g. omviratfurniture.in | ~₹700/year |
+| Domain | e.g. omsriviratteakworks.in | ~₹700/year |
 
 Set `NEXT_PUBLIC_STRAPI_URL` on Vercel to your live Strapi address and it works the same.
 
@@ -132,11 +132,13 @@ Set `NEXT_PUBLIC_STRAPI_URL` on Vercel to your live Strapi address and it works 
 Blueprint and a `strapi/Dockerfile` ready to go. See
 **[DEPLOY-RENDER.md](./DEPLOY-RENDER.md)** for the step-by-step.
 
-**For Google ranking**, the website is only part of it. Also do these:
+**For Google ranking** — the site now targets "teak wood work in Karimnagar" in its title, headings, alt text and structured data, but ranking #1 in the local map pack is driven mostly by signals outside the website. Do these, roughly in order of impact:
 
-1. Create a **Google Business Profile** for Om Virat — free, and it drives local map results more than the website does. Category: "Furniture manufacturer" plus "Carpenter". Add your hours, phone, and photos.
-2. Point your domain at the site and submit it in **Google Search Console**.
-3. Ask every customer for a **Google review**. This is the single biggest lever in local search.
+1. Create a **Google Business Profile** for Om Sri Virat — free, and it drives local map results more than the website does. Name it exactly `Om Sri Virat Wooden Furniture, Building Works & Aluminium Works`, category "Furniture manufacturer" + "Carpenter" + "Door supplier", add hours, phone, service area (Karimnagar), and real photos of finished work. Keep the business name, address and phone (NAP) **identical** everywhere it appears online.
+2. Ask every customer for a **Google review**, and reply to each one — review count and recency is the single biggest lever in local search, more than anything on the website.
+3. Get listed on local directories (JustDial, IndiaMART, Sulekha, Facebook) with the same NAP, and try to get a few backlinks from Karimnagar/Telangana business or news sites.
+4. Point your domain at the site and submit it, plus the sitemap (`/sitemap.xml`), in **Google Search Console**. Request indexing after launch.
+5. Post photos of new work to the Business Profile regularly — Google treats an active profile as a stronger local signal than a static one.
 
 ---
 

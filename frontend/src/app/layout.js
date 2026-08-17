@@ -1,18 +1,26 @@
 import './globals.css';
 import { LanguageProvider } from '@/lib/i18n';
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://omsri.example';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://omsrivirat.example';
 
 export const metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: 'Teak Wood Work in Karimnagar | Om Sri Wooden Furniture, Building Works & Aluminium Works',
-    template: '%s | Om Sri, Karimnagar'
+    default: 'Teak Wood Work in Karimnagar | Om Sri Virat Wooden Furniture, Building Works & Aluminium Works',
+    template: '%s | Om Sri Virat, Karimnagar'
   },
   description:
-    'Om Sri Wooden Furniture, Building Works & Aluminium Works does teak wood work in Karimnagar — beds, sofas, main doors, CNC pooja doors, veneer doors and windows, plus building and aluminium works. Own carpenters, seasoned teak, delivery on the agreed date. Call 98495 23572.',
-  keywords: ['teak wood work Karimnagar', 'teak furniture Karimnagar', 'wooden doors Karimnagar', 'pooja door CNC', 'carpenter Karimnagar', 'teak main door Telangana', 'aluminium works Karimnagar'],
-  openGraph: { type: 'website', locale: 'en_IN', siteName: 'Om Sri Wooden Furniture' },
+    'Om Sri Virat Wooden Furniture, Building Works & Aluminium Works does teak wood work in Karimnagar — beds, sofas, main doors, CNC pooja doors, veneer doors and windows, plus building and aluminium works. Own carpenters, seasoned teak, delivery on the agreed date. Call 98495 23572.',
+  keywords: ['teak wood work Karimnagar', 'teak wood work in Karimnagar', 'teak furniture Karimnagar', 'wooden doors Karimnagar', 'pooja door CNC', 'carpenter Karimnagar', 'teak main door Telangana', 'aluminium works Karimnagar', 'Om Sri Virat Karimnagar'],
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    siteName: 'Om Sri Virat Wooden Furniture',
+    title: 'Teak Wood Work in Karimnagar | Om Sri Virat Wooden Furniture, Building Works & Aluminium Works',
+    description: 'Teak wood work in Karimnagar — beds, doors, CNC pooja doors, veneer doors, windows, building and aluminium works. Own carpenters, seasoned teak.'
+  },
+  twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
   other: { 'geo.region': 'IN-TG', 'geo.placename': 'Karimnagar' }
 };
@@ -20,7 +28,8 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
-  name: 'Om Sri Wooden Furniture, Building Works & Aluminium Works',
+  name: 'Om Sri Virat Wooden Furniture, Building Works & Aluminium Works',
+  alternateName: 'Om Sri Virat',
   description: 'Teak wood work, main doors, CNC pooja doors, veneer doors, windows, and building and aluminium works in Karimnagar, Telangana.',
   founder: { '@type': 'Person', name: 'Narsingoju Srinivas' },
   telephone: '+91-98495-23572',

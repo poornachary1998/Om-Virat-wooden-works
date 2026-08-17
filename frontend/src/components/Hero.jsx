@@ -21,7 +21,7 @@ export default function Hero({ images }) {
         ratio="4x5"
         autoplayMs={5000}
         priority
-        images={images.map((url) => ({ url, alt: 'Teak main door made by Om Sri, Karimnagar' }))}
+        images={images.map((url) => ({ url, alt: 'Teak main door made by Om Sri Virat, Karimnagar' }))}
       />
     </div>
   );

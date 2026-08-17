@@ -10,9 +10,9 @@ export default function Header() {
     <header className="header">
       <div className="wrap">
         <Link href="/" className="logo">
-          <Image src="/logo-mark.png" alt="Om Sri" width={40} height={40} className="logo-mark" priority />
+          <Image src="/logo-mark.png" alt="Om Sri Virat" width={40} height={40} className="logo-mark" priority />
           <span>
-            <span className="logo-name">Om Sri</span>
+            <span className="logo-name">Om Sri Virat</span>
             <span className="logo-sub">{t.logoSub}</span>
           </span>
         </Link>

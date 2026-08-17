@@ -47,7 +47,7 @@ export default function CatalogGrid({ categories, items }) {
                   <div className="shot">
                     <Image
                       src={it.url}
-                      alt={name + ' — teak ' + (cat ? pick(cat, 'name', 'en').toLowerCase() : 'furniture') + ', made in Karimnagar by Om Sri'}
+                      alt={name + ' — teak ' + (cat ? pick(cat, 'name', 'en').toLowerCase() : 'furniture') + ', made in Karimnagar by Om Sri Virat'}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       loading="lazy"

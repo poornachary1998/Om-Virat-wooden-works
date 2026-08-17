@@ -25,7 +25,7 @@ export default function Contact() {
           <div className="map">
             <iframe
               src="https://maps.google.com/maps?q=18.4435501,79.1338994&z=16&output=embed"
-              title="Om Sri Wooden Furniture — location on Google Maps"
+              title="Om Sri Virat Wooden Furniture — location on Google Maps"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
