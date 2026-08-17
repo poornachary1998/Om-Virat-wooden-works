@@ -5,7 +5,8 @@ const { hostname, protocol, port } = new URL(strapi);
 export default {
   images: {
     remotePatterns: [
-      { protocol: protocol.replace(':', ''), hostname, port: port || '' }
+      { protocol: protocol.replace(':', ''), hostname, port: port || '' },
+      { protocol: 'https', hostname: 'res.cloudinary.com' }
     ]
   }
 };
