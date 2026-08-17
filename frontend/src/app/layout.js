@@ -1,7 +1,7 @@
 import './globals.css';
 import { LanguageProvider } from '@/lib/i18n';
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://omsrivirat.example';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://omsrivirat-teakworks.netlify.app';
 
 export const metadata = {
   metadataBase: new URL(SITE),
