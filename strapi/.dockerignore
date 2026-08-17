@@ -1,0 +1,12 @@
+node_modules
+.tmp
+.cache
+.strapi
+dist
+build
+.env
+.git
+.gitignore
+*.log
+public/uploads/*
+!public/uploads/.gitkeep
