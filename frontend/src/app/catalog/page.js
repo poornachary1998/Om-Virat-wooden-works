@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Teak Wood Work Catalog — Doors & Furniture, Karimnagar',
   description:
-    'Catalog of teak wood work in Karimnagar: main doors, CNC pooja doors, veneer and interior doors, beds, sofas, dining tables and windows made to measure.',
+    'Catalog of teak wood work in Karimnagar: main doors, CNC pooja doors, beds and windows made to measure.',
   alternates: { canonical: '/catalog' }
 };
 
