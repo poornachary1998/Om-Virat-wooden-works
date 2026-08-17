@@ -9,7 +9,7 @@ Open **http://localhost:1337/admin** (or your live Strapi address) and log in.
 | What | What it holds |
 |---|---|
 | **Product** | One door, bed, sofa, window. Name, description, photo, category. |
-| **Category** | The seven groups: Beds, Chairs & sofas, Dining tables, Main doors, Pooja doors (CNC), Veneer doors, Windows. |
+| **Category** | The four groups: Beds, Main doors, Pooja doors (CNC), Windows. |
 | **Site Settings** | The home page slideshow images and your contact details. |
 
 ---

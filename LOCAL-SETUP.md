@@ -163,19 +163,19 @@ node upload.mjs
 You should see:
 
 ```
-Seeding 7 categories and 40 products into http://localhost:1337
+Seeding 4 categories and 35 products into http://localhost:1337
 + category: Beds
-+ category: Chairs & sofas
++ category: Main doors
 ...
 + product: Box storage bed
 + product: Carved cot, king size
 ...
 + hero slideshow: 7 images
 
-Done. 40 new products.
+Done. 35 new products, 0 products removed, 0 categories removed.
 ```
 
-Go to the Strapi admin → **Content Manager → Product**. All 40 should be listed with photos.
+Go to the Strapi admin → **Content Manager → Product**. All 35 should be listed with photos.
 
 ---
 

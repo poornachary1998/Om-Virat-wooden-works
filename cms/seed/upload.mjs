@@ -1,11 +1,14 @@
 /**
- * One-shot seed: uploads every image to Strapi's Media Library and creates
- * the Category + Product entries that reference them.
+ * One-shot seed: uploads every image to Strapi's Media Library and syncs
+ * the Category + Product entries in Strapi to match cms/seed/data.json.
  *
  *   cp .env.example .env   (then paste your token)
  *   npm run seed
  *
- * Safe to re-run: it skips anything already there, matched by slug.
+ * Safe to re-run: entries are matched by slug. Missing ones are created,
+ * existing ones are updated in place, and any Category or Product that is
+ * in Strapi but no longer in data.json is deleted — so removing an entry
+ * from data.json and re-running the seed removes it from Strapi too.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -76,12 +79,29 @@ async function findBySlug(collection, slug) {
   return json.data?.[0] || null;
 }
 
+async function listAll(collection) {
+  const json = await api('/api/' + collection + '?pagination[pageSize]=200');
+  return json.data || [];
+}
+
 async function create(collection, data) {
   return api('/api/' + collection, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ data })
   });
+}
+
+async function update(collection, id, data) {
+  return api('/api/' + collection + '/' + id, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ data })
+  });
+}
+
+async function remove(collection, id) {
+  return api('/api/' + collection + '/' + id, { method: 'DELETE' });
 }
 
 const seed = JSON.parse(fs.readFileSync(path.join(here, 'data.json'), 'utf8'));
@@ -93,7 +113,8 @@ for (const cat of seed.categories) {
   const found = await findBySlug('categories', cat.slug);
   if (found) {
     categoryIds[cat.slug] = found.id;
-    console.log('= category exists: ' + cat.name_en);
+    await update('categories', found.id, { name_en: cat.name_en, name_te: cat.name_te, order: cat.order });
+    console.log('= category updated: ' + cat.name_en);
     continue;
   }
   const made = await create('categories', cat);
@@ -103,22 +124,45 @@ for (const cat of seed.categories) {
 
 let added = 0;
 for (const p of seed.products) {
-  if (await findBySlug('products', p.slug)) {
-    console.log('= product exists: ' + p.name_en);
-    continue;
-  }
   const imageId = await uploadImage(p.image);
   if (!imageId) continue;
-  await create('products', {
-    slug: p.slug,
+  const fields = {
     name_en: p.name_en, name_te: p.name_te,
     description_en: p.description_en, description_te: p.description_te,
     order: p.order,
     image: imageId,
     category: categoryIds[p.category]
-  });
+  };
+  const found = await findBySlug('products', p.slug);
+  if (found) {
+    await update('products', found.id, fields);
+    console.log('= product updated: ' + p.name_en);
+    continue;
+  }
+  await create('products', { slug: p.slug, ...fields });
   added++;
   console.log('+ product: ' + p.name_en);
+}
+
+// Remove anything left in Strapi that is no longer in data.json.
+const seedProductSlugs = new Set(seed.products.map((p) => p.slug));
+let removedProducts = 0;
+for (const entry of await listAll('products')) {
+  const slug = entry.slug ?? entry.attributes?.slug;
+  if (seedProductSlugs.has(slug)) continue;
+  await remove('products', entry.id);
+  removedProducts++;
+  console.log('- product removed: ' + slug);
+}
+
+const seedCategorySlugs = new Set(seed.categories.map((c) => c.slug));
+let removedCategories = 0;
+for (const entry of await listAll('categories')) {
+  const slug = entry.slug ?? entry.attributes?.slug;
+  if (seedCategorySlugs.has(slug)) continue;
+  await remove('categories', entry.id);
+  removedCategories++;
+  console.log('- category removed: ' + slug);
 }
 
 // Hero slideshow images on the Site Settings single type.
@@ -139,4 +183,7 @@ await api('/api/site-setting', {
 });
 console.log('+ hero slideshow: ' + heroIds.length + ' images');
 
-console.log('\nDone. ' + added + ' new products. Open ' + URL_BASE + '/admin to see them.');
+console.log(
+  '\nDone. ' + added + ' new products, ' + removedProducts + ' products removed, ' +
+  removedCategories + ' categories removed. Open ' + URL_BASE + '/admin to see them.'
+);
