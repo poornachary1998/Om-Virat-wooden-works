@@ -10,7 +10,7 @@ export const metadata = {
     template: '%s | Om Sri Virat, Karimnagar'
   },
   description:
-    'Om Sri Virat Wooden Furniture, Building Works & Aluminium Works does teak wood work in Karimnagar — beds, sofas, main doors, CNC pooja doors, veneer doors and windows, plus building and aluminium works. Own carpenters, seasoned teak, delivery on the agreed date. Call 98495 23572.',
+    'Om Sri Virat Wooden Furniture, Building Works & Aluminium Works does teak wood work in Karimnagar — beds, main doors, CNC pooja doors and windows, plus building and aluminium works. Own carpenters, seasoned teak, delivery on the agreed date. Call 98495 23572.',
   keywords: ['teak wood work Karimnagar', 'teak wood work in Karimnagar', 'teak furniture Karimnagar', 'wooden doors Karimnagar', 'pooja door CNC', 'carpenter Karimnagar', 'teak main door Telangana', 'aluminium works Karimnagar', 'Om Sri Virat Karimnagar'],
   alternates: { canonical: '/' },
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata = {
     locale: 'en_IN',
     siteName: 'Om Sri Virat Wooden Furniture',
     title: 'Teak Wood Work in Karimnagar | Om Sri Virat Wooden Furniture, Building Works & Aluminium Works',
-    description: 'Teak wood work in Karimnagar — beds, doors, CNC pooja doors, veneer doors, windows, building and aluminium works. Own carpenters, seasoned teak.'
+    description: 'Teak wood work in Karimnagar — beds, doors, CNC pooja doors, windows, building and aluminium works. Own carpenters, seasoned teak.'
   },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
@@ -30,7 +30,7 @@ const jsonLd = {
   '@type': 'HomeAndConstructionBusiness',
   name: 'Om Sri Virat Wooden Furniture, Building Works & Aluminium Works',
   alternateName: 'Om Sri Virat',
-  description: 'Teak wood work, main doors, CNC pooja doors, veneer doors, windows, and building and aluminium works in Karimnagar, Telangana.',
+  description: 'Teak wood work, main doors, CNC pooja doors, windows, and building and aluminium works in Karimnagar, Telangana.',
   founder: { '@type': 'Person', name: 'Narsingoju Srinivas' },
   telephone: '+91-98495-23572',
   hasMap: 'https://maps.app.goo.gl/Y4a1oaU1JJQ4yGiFA',
