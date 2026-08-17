@@ -2,11 +2,13 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useLang, UI, pick } from '@/lib/i18n';
+import Lightbox from './Lightbox';
 
 export default function CatalogGrid({ categories, items }) {
   const { lang } = useLang();
   const t = UI[lang];
   const [filter, setFilter] = useState('all');
+  const [zoomed, setZoomed] = useState(null);
 
   const shown = filter === 'all' ? items : items.filter((it) => it.category === filter);
 
@@ -42,16 +44,28 @@ export default function CatalogGrid({ categories, items }) {
             {shown.map((it) => {
               const cat = categories.find((c) => c.slug === it.category);
               const name = pick(it, 'name', lang);
+              const alt = name + ' — teak ' + (cat ? pick(cat, 'name', 'en').toLowerCase() : 'furniture') + ', made in Karimnagar by Om Sri Virat';
               return (
                 <article className="product" key={it.id}>
                   <div className="shot">
                     <Image
                       src={it.url}
-                      alt={name + ' — teak ' + (cat ? pick(cat, 'name', 'en').toLowerCase() : 'furniture') + ', made in Karimnagar by Om Sri Virat'}
+                      alt={alt}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       loading="lazy"
                     />
+                    <button
+                      className="zoom-btn"
+                      aria-label={lang === 'te' ? 'పూర్తి ఫోటో చూడండి' : 'View full photo'}
+                      onClick={() => setZoomed({ url: it.url, alt })}
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="M21 21l-4.3-4.3" strokeLinecap="round" />
+                        <path d="M11 8v6M8 11h6" strokeLinecap="round" />
+                      </svg>
+                    </button>
                   </div>
                   <div className="product-body">
                     <div className="eyebrow">{cat ? pick(cat, 'name', lang) : ''}</div>
@@ -72,6 +86,8 @@ export default function CatalogGrid({ categories, items }) {
           </div>
         </div>
       </section>
+
+      <Lightbox image={zoomed} onClose={() => setZoomed(null)} />
     </>
   );
 }

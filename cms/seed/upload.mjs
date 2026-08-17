@@ -35,15 +35,25 @@ if (!TOKEN) {
 
 const auth = { Authorization: 'Bearer ' + TOKEN };
 
-async function api(pathname, options = {}) {
-  const res = await fetch(URL_BASE + pathname, {
-    ...options,
-    headers: { ...auth, ...(options.headers || {}) }
-  });
-  if (!res.ok) {
-    throw new Error(res.status + ' ' + res.statusText + ' on ' + pathname + ' — ' + (await res.text()).slice(0, 300));
+/** The free Render tier occasionally cuts a response short under load; retry transient failures. */
+async function api(pathname, options = {}, attempt = 1) {
+  try {
+    const res = await fetch(URL_BASE + pathname, {
+      ...options,
+      // Force a fresh connection: after ~100+ requests on one keep-alive
+      // socket the free Render tier starts returning truncated bodies.
+      headers: { ...auth, Connection: 'close', ...(options.headers || {}) }
+    });
+    if (!res.ok) {
+      throw new Error(res.status + ' ' + res.statusText + ' on ' + pathname + ' — ' + (await res.text()).slice(0, 300));
+    }
+    return await res.json();
+  } catch (err) {
+    if (attempt >= 3) throw err;
+    console.warn('  ! ' + err.message + ' — retrying (' + attempt + '/2)');
+    await new Promise((r) => setTimeout(r, 1500 * attempt));
+    return api(pathname, options, attempt + 1);
   }
-  return res.json();
 }
 
 /** Upload one file to the Media Library, return its id. Reuses an existing upload of the same name. */
@@ -79,9 +89,21 @@ async function findBySlug(collection, slug) {
   return json.data?.[0] || null;
 }
 
+/** Page through a collection instead of asking for it all in one response — the
+ *  free Render tier occasionally truncates large single-page responses. */
 async function listAll(collection) {
-  const json = await api('/api/' + collection + '?pagination[pageSize]=200');
-  return json.data || [];
+  const all = [];
+  let page = 1;
+  for (;;) {
+    const json = await api(
+      '/api/' + collection + '?pagination[page]=' + page + '&pagination[pageSize]=25&fields[0]=slug'
+    );
+    all.push(...(json.data || []));
+    const { page: p, pageCount } = json.meta.pagination;
+    if (p >= pageCount) break;
+    page++;
+  }
+  return all;
 }
 
 async function create(collection, data) {
@@ -112,13 +134,13 @@ const categoryIds = {};
 for (const cat of seed.categories) {
   const found = await findBySlug('categories', cat.slug);
   if (found) {
-    categoryIds[cat.slug] = found.id;
-    await update('categories', found.id, { name_en: cat.name_en, name_te: cat.name_te, order: cat.order });
+    categoryIds[cat.slug] = found.documentId;
+    await update('categories', found.documentId, { name_en: cat.name_en, name_te: cat.name_te, order: cat.order });
     console.log('= category updated: ' + cat.name_en);
     continue;
   }
   const made = await create('categories', cat);
-  categoryIds[cat.slug] = made.data.id;
+  categoryIds[cat.slug] = made.data.documentId;
   console.log('+ category: ' + cat.name_en);
 }
 
@@ -135,7 +157,7 @@ for (const p of seed.products) {
   };
   const found = await findBySlug('products', p.slug);
   if (found) {
-    await update('products', found.id, fields);
+    await update('products', found.documentId, fields);
     console.log('= product updated: ' + p.name_en);
     continue;
   }
@@ -150,7 +172,7 @@ let removedProducts = 0;
 for (const entry of await listAll('products')) {
   const slug = entry.slug ?? entry.attributes?.slug;
   if (seedProductSlugs.has(slug)) continue;
-  await remove('products', entry.id);
+  await remove('products', entry.documentId);
   removedProducts++;
   console.log('- product removed: ' + slug);
 }
@@ -160,7 +182,7 @@ let removedCategories = 0;
 for (const entry of await listAll('categories')) {
   const slug = entry.slug ?? entry.attributes?.slug;
   if (seedCategorySlugs.has(slug)) continue;
-  await remove('categories', entry.id);
+  await remove('categories', entry.documentId);
   removedCategories++;
   console.log('- category removed: ' + slug);
 }

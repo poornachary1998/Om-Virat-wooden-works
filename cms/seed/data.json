@@ -27,33 +27,33 @@
   ],
   "products": [
     {
-      "slug": "box-storage-bed-1",
-      "name_en": "Box storage bed",
-      "name_te": "బాక్స్ స్టోరేజ్ మంచం",
-      "description_en": "Full teak frame with storage under the mattress, carved headboard and matching side table.",
-      "description_te": "పూర్తి టేకు ఫ్రేమ్, పరుపు కింద స్టోరేజ్, చెక్కిన హెడ్‌బోర్డ్, సరిపోలే సైడ్ టేబుల్.",
+      "slug": "carved-cot-with-side-table-3",
+      "name_en": "Carved cot with storage and side table",
+      "name_te": "స్టోరేజ్, సైడ్ టేబుల్‌తో చెక్కిన కాట్",
+      "description_en": "Solid teak box-storage bed with hand-carved headboard and footboard panels, high-gloss polish, and a matching teak bedside unit with drawer and shutter.",
+      "description_te": "ఘన టేకు బాక్స్-స్టోరేజ్ మంచం, చేతితో చెక్కిన హెడ్‌బోర్డ్, ఫుట్‌బోర్డ్ ప్యానెళ్లు, హై-గ్లాస్ పాలిష్, సరిపోలే టేకు బెడ్‌సైడ్ యూనిట్‌తో డ్రాయర్, షట్టర్.",
       "category": "beds",
-      "image": "IMG_20190318_152618.jpg",
+      "image": "IMG_20190318_152308.jpg",
       "order": 0
     },
     {
-      "slug": "carved-cot-king-size-2",
-      "name_en": "Carved cot, king size",
-      "name_te": "చెక్కిన కాట్, కింగ్ సైజ్",
-      "description_en": "Solid teak with hand-carved headboard and footboard panels, high-gloss polish.",
-      "description_te": "ఘన టేకు, చేతితో చెక్కిన హెడ్‌బోర్డ్, ఫుట్‌బోర్డ్ ప్యానెళ్లు, హై-గ్లాస్ పాలిష్.",
+      "slug": "carved-headboard-box-bed-48",
+      "name_en": "Carved headboard box bed",
+      "name_te": "చెక్కిన హెడ్‌బోర్డ్ బాక్స్ మంచం",
+      "description_en": "Solid teak box bed with a scalloped, floral-carved headboard and turned corner finials, high-gloss polish.",
+      "description_te": "స్కాలప్డ్ ఆకారంలో పూల చెక్కిన హెడ్‌బోర్డ్, మూలల్లో తిప్పిన ఫినియల్స్‌తో ఘన టేకు బాక్స్ మంచం, హై-గ్లాస్ పాలిష్.",
       "category": "beds",
-      "image": "IMG_20190318_152303.jpg",
+      "image": "IMG20260817WA0008.jpg",
       "order": 1
     },
     {
-      "slug": "carved-cot-with-side-table-3",
-      "name_en": "Carved cot with side table",
-      "name_te": "సైడ్ టేబుల్‌తో చెక్కిన కాట్",
-      "description_en": "Same frame with a teak bedside unit, drawer and shutter.",
-      "description_te": "అదే ఫ్రేమ్‌తో పాటు డ్రాయర్, షట్టర్ ఉన్న టేకు బెడ్‌సైడ్ యూనిట్.",
+      "slug": "bed-with-bedside-drawer-unit-49",
+      "name_en": "Bed with built-in bedside drawers",
+      "name_te": "బిల్ట్-ఇన్ డ్రాయర్లతో మంచం",
+      "description_en": "Carved floral headboard bed with a matching bedside drawer unit built into the frame.",
+      "description_te": "చెక్కిన పూల హెడ్‌బోర్డ్ మంచం, ఫ్రేమ్‌లో అమర్చిన సరిపోలే డ్రాయర్ యూనిట్‌తో.",
       "category": "beds",
-      "image": "IMG_20190318_152308.jpg",
+      "image": "IMG20260817WA0012.jpg",
       "order": 2
     },
     {
@@ -277,6 +277,166 @@
       "order": 24
     },
     {
+      "slug": "lakshmi-ganesha-saraswati-entry-door-50",
+      "name_en": "Lakshmi-Ganesha-Saraswati entry door",
+      "name_te": "లక్ష్మి-గణేష-సరస్వతి ఎంట్రీ డోర్",
+      "description_en": "Grand teak double door with a carved Lakshmi, Ganesha and Saraswati pediment, floral panels and diamond-cut glass sidelights.",
+      "description_te": "చెక్కిన లక్ష్మి, గణేష, సరస్వతి పెడిమెంట్, పూల ప్యానెళ్లు, డైమండ్-కట్ గ్లాస్ సైడ్‌లైట్లతో గొప్ప టేకు డబుల్ డోర్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0007.jpg",
+      "order": 25
+    },
+    {
+      "slug": "dark-banded-panel-door-51",
+      "name_en": "Dark banded panel door",
+      "name_te": "డార్క్ బ్యాండెడ్ ప్యానెల్ డోర్",
+      "description_en": "Single-leaf teak door alternating plain dark-polish bands with fine floral-carved bands, centre brass handle.",
+      "description_te": "సాదా డార్క్ పాలిష్ బ్యాండ్లు, సున్నితమైన పూల చెక్కిన బ్యాండ్లు మార్చి మార్చి ఉన్న సింగిల్ లీఫ్ టేకు డోర్, మధ్యలో ఇత్తడి హ్యాండిల్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0016.jpg",
+      "order": 26
+    },
+    {
+      "slug": "leaf-handle-carved-panel-door-52",
+      "name_en": "Leaf-handle carved panel door",
+      "name_te": "ఆకు హ్యాండిల్ చెక్కిన ప్యానెల్ డోర్",
+      "description_en": "Teak double door with fine diamond-lattice carved bands and tall leaf-shaped brass pull handles, glass sidelights.",
+      "description_te": "సన్నని డైమండ్-లాటిస్ చెక్కిన బ్యాండ్లు, పొడవైన ఆకు ఆకారపు ఇత్తడి హ్యాండిల్స్, గ్లాస్ సైడ్‌లైట్లతో టేకు డబుల్ డోర్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0022.jpg",
+      "order": 27
+    },
+    {
+      "slug": "brass-medallion-inlay-door-53",
+      "name_en": "Brass medallion inlay door",
+      "name_te": "ఇత్తడి మెడలియన్ ఇన్‌లే డోర్",
+      "description_en": "Panelled teak double door studded with rows of square brass medallion appliques.",
+      "description_te": "వరుసలుగా చతురస్ర ఇత్తడి మెడలియన్ అప్లికేలతో అలంకరించిన ప్యానెల్డ్ టేకు డబుల్ డోర్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0025.jpg",
+      "order": 28
+    },
+    {
+      "slug": "starburst-carved-door-with-mirror-sides-54",
+      "name_en": "Starburst carved door with mirror sides",
+      "name_te": "మిర్రర్ సైడ్‌లతో స్టార్‌బర్స్ట్ చెక్కిన డోర్",
+      "description_en": "Double door with a carved star-flower motif on each leaf, flanked by tall mirrored side panels.",
+      "description_te": "ప్రతి రెక్కపై చెక్కిన నక్షత్ర పూల డిజైన్, పొడవైన మిర్రర్ సైడ్ ప్యానెళ్లతో డబుల్ డోర్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0034.jpg",
+      "order": 29
+    },
+    {
+      "slug": "faceted-diamond-3d-door-55",
+      "name_en": "Faceted 3D diamond door",
+      "name_te": "3D డైమండ్ ఫేసెటెడ్ డోర్",
+      "description_en": "All-over faceted diamond relief across both leaves for a striking 3D texture, brass bar handles.",
+      "description_te": "రెండు రెక్కలపై పూర్తిగా ఫేసెటెడ్ డైమండ్ రిలీఫ్, ఆకర్షణీయమైన 3D టెక్స్చర్, ఇత్తడి బార్ హ్యాండిల్స్.",
+      "category": "main-doors",
+      "image": "IMG20260817WA0040.jpg",
+      "order": 30
+    },
+    {
+      "slug": "classic-three-panel-interior-door-67",
+      "name_en": "Classic three-panel interior door",
+      "name_te": "క్లాసిక్ మూడు ప్యానెల్ ఇంటీరియర్ డోర్",
+      "description_en": "Traditional moulded three-panel door in a rich walnut stain, fitted with white crown trim.",
+      "description_te": "సంపన్న వాల్‌నట్ స్టెయిన్‌లో సాంప్రదాయ మౌల్డెడ్ మూడు ప్యానెల్ డోర్, తెల్ల క్రౌన్ ట్రిమ్‌తో.",
+      "category": "main-doors",
+      "image": "classic-three-panel-interior-door.jpg",
+      "order": 31
+    },
+    {
+      "slug": "tall-panelled-entrance-door-68",
+      "name_en": "Tall panelled entrance door",
+      "name_te": "ఎత్తైన ప్యానెల్డ్ ఎంట్రీ డోర్",
+      "description_en": "Full-height four-panel teak entrance door with long brass floor-to-waist pull handles, for grand entrances.",
+      "description_te": "పొడవైన ఇత్తడి హ్యాండిల్స్‌తో నాలుగు ప్యానెళ్ల పూర్తి ఎత్తు టేకు ఎంట్రీ డోర్, గొప్ప ముఖద్వారాలకు.",
+      "category": "main-doors",
+      "image": "tall-panelled-entrance-door.jpg",
+      "order": 32
+    },
+    {
+      "slug": "plain-interior-door-25",
+      "name_en": "Plain interior door",
+      "name_te": "సాదా ఇంటీరియర్ డోర్",
+      "description_en": "Two-panel teak interior door, simple profile and lever handle.",
+      "description_te": "రెండు ప్యానెళ్ల టేకు ఇంటీరియర్ డోర్, సాదా డిజైన్, లివర్ హ్యాండిల్.",
+      "category": "main-doors",
+      "image": "IMG_20251018_172936.jpg",
+      "order": 33
+    },
+    {
+      "slug": "fluted-interior-door-26",
+      "name_en": "Fluted interior door",
+      "name_te": "ఫ్లూటెడ్ ఇంటీరియర్ డోర్",
+      "description_en": "Fluted panels with brass rosettes for bedrooms and study rooms.",
+      "description_te": "బెడ్‌రూమ్, స్టడీ గదులకు ఇత్తడి రోసెట్‌లతో ఫ్లూటెడ్ ప్యానెళ్లు.",
+      "category": "main-doors",
+      "image": "IMG_20240315_175221.jpg",
+      "order": 34
+    },
+    {
+      "slug": "glass-partition-door-27",
+      "name_en": "Glass partition door",
+      "name_te": "గ్లాస్ పార్టిషన్ డోర్",
+      "description_en": "Teak framed double door with clear and frosted glass for interior partitions.",
+      "description_te": "టేకు ఫ్రేమ్ డబుల్ డోర్, క్లియర్ & ఫ్రాస్టెడ్ గ్లాస్ — ఇంటీరియర్ పార్టిషన్‌కు.",
+      "category": "main-doors",
+      "image": "IMG_20240423_125855.jpg",
+      "order": 35
+    },
+    {
+      "slug": "classic-two-panel-door-36",
+      "name_en": "Classic two-panel door",
+      "name_te": "క్లాసిక్ రెండు ప్యానెల్ డోర్",
+      "description_en": "Raised two-panel teak with brass lever — the standard bedroom door.",
+      "description_te": "ఇత్తడి లివర్‌తో రెండు ప్యానెల్ టేకు — సాధారణ బెడ్‌రూమ్ డోర్.",
+      "category": "main-doors",
+      "image": "d-classic-2panel.jpg",
+      "order": 36
+    },
+    {
+      "slug": "classic-three-panel-door-37",
+      "name_en": "Classic three-panel door",
+      "name_te": "క్లాసిక్ మూడు ప్యానెల్ డోర్",
+      "description_en": "Traditional moulded panels, suits homes with white trim work.",
+      "description_te": "సాంప్రదాయ మౌల్డెడ్ ప్యానెళ్లు, తెల్ల ట్రిమ్ ఉన్న ఇళ్లకు సరిపోతుంది.",
+      "category": "main-doors",
+      "image": "d-classic-3panel.jpg",
+      "order": 37
+    },
+    {
+      "slug": "grooved-bedroom-door-38",
+      "name_en": "Grooved bedroom door",
+      "name_te": "గ్రూవ్ బెడ్‌రూమ్ డోర్",
+      "description_en": "Flush teak shutter with fine horizontal grooves and a steel lever.",
+      "description_te": "సన్నని అడ్డ గ్రూవ్‌లు, స్టీల్ లివర్‌తో టేకు ఫ్లష్ షట్టర్.",
+      "category": "main-doors",
+      "image": "d-fluted-dark-b.jpg",
+      "order": 38
+    },
+    {
+      "slug": "curved-groove-door-39",
+      "name_en": "Curved groove door",
+      "name_te": "కర్వ్ గ్రూవ్ డోర్",
+      "description_en": "A single curved sweep across a panelled flush shutter, brass lever.",
+      "description_te": "ప్యానెల్ ఫ్లష్ షట్టర్‌పై ఒకే వంపు డిజైన్, ఇత్తడి లివర్.",
+      "category": "main-doors",
+      "image": "d-arora-fluted-entry.jpg",
+      "order": 39
+    },
+    {
+      "slug": "brass-inlay-door-40",
+      "name_en": "Brass inlay door",
+      "name_te": "ఇత్తడి ఇన్‌లే డోర్",
+      "description_en": "Flush shutter with slim brass inlay lines and a matching gold lever.",
+      "description_te": "సన్నని ఇత్తడి ఇన్‌లే గీతలు, సరిపోలే గోల్డ్ లివర్‌తో ఫ్లష్ షట్టర్.",
+      "category": "main-doors",
+      "image": "d-teak-vertical-flute.jpg",
+      "order": 40
+    },
+    {
       "slug": "ganesha-pooja-door-19",
       "name_en": "Ganesha pooja door",
       "name_te": "గణేష పూజ తలుపు",
@@ -284,7 +444,7 @@
       "description_te": "చెక్కిన గణేష, ఏనుగుల ప్యానెల్, పక్కన ఎచ్డ్ గ్లాస్ కిటికీలు.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20181020_130639.jpg",
-      "order": 25
+      "order": 41
     },
     {
       "slug": "cow-lotus-jali-door-20",
@@ -294,7 +454,7 @@
       "description_te": "గోవు, కమలం, గంట డిజైన్లతో గ్లాస్ ప్యానెళ్ల గ్రిడ్, టేకు ఫ్రేమ్.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20251015_152140.jpg",
-      "order": 26
+      "order": 42
     },
     {
       "slug": "lakshmi-print-pooja-door-21",
@@ -304,7 +464,7 @@
       "description_te": "టేకు ఫ్రేమ్, ప్రింటెడ్ గ్లాస్ ప్యానెళ్లు, ఇత్తడి కమలం హ్యాండిల్స్.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20250529_121028.jpg",
-      "order": 27
+      "order": 43
     },
     {
       "slug": "balaji-carving-panel-22",
@@ -314,7 +474,7 @@
       "description_te": "ఘన టేకుపై లోతైన బాలాజీ చెక్కడం, తలుపు పైన అమర్చడానికి సిద్ధం.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20240317_125622.jpg",
-      "order": 28
+      "order": 44
     },
     {
       "slug": "pooja-mandir-temple-23",
@@ -324,7 +484,7 @@
       "description_te": "తిప్పిన స్తంభాలు, మెట్ల ఆకార పైకప్పుతో టేకు మందిరం.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20240421_143323.jpg",
-      "order": 29
+      "order": 45
     },
     {
       "slug": "cnc-carved-panel-24",
@@ -334,7 +494,7 @@
       "description_te": "టేకుపై మెషిన్ కట్ జ్యామితి డిజైన్, పాలిష్‌కు ముందు చేతితో సాన్డింగ్.",
       "category": "pooja-doors-cnc",
       "image": "IMG_20250118_154422.jpg",
-      "order": 30
+      "order": 46
     },
     {
       "slug": "reeded-glass-pooja-door-35",
@@ -344,7 +504,47 @@
       "description_te": "టేకు ఫ్రేమ్‌లో రెండు రీడెడ్ గ్లాస్ రెక్కలు, మధ్యలో ఇత్తడి గంట డిజైన్లు.",
       "category": "pooja-doors-cnc",
       "image": "d-bedroom-groove.jpg",
-      "order": 31
+      "order": 47
+    },
+    {
+      "slug": "swan-pediment-pooja-mandir-57",
+      "name_en": "Swan pediment pooja mandir",
+      "name_te": "హంస పెడిమెంట్ పూజ మందిరం",
+      "description_en": "Carved grapevine centre panel under a swan-crest pediment, framed by tall arched glass sidelights.",
+      "description_te": "హంస డిజైన్ పెడిమెంట్ కింద చెక్కిన ద్రాక్షతీగ మధ్య ప్యానెల్, పొడవైన ఆర్చ్ గ్లాస్ సైడ్‌లైట్లతో ఫ్రేమ్.",
+      "category": "pooja-doors-cnc",
+      "image": "IMG20260817WA0019.jpg",
+      "order": 48
+    },
+    {
+      "slug": "ganesha-elephant-relief-panel-58",
+      "name_en": "Ganesha elephant relief panel",
+      "name_te": "గణేష ఏనుగుల రిలీఫ్ ప్యానెల్",
+      "description_en": "Deep relief Ganesha panel flanked by two elephants in solid teak, ready for fitting above a door.",
+      "description_te": "ఘన టేకుపై గణేష, ఇరువైపులా ఏనుగులతో లోతైన రిలీఫ్ ప్యానెల్, తలుపు పైన అమర్చడానికి సిద్ధం.",
+      "category": "pooja-doors-cnc",
+      "image": "IMG20260817WA0026.jpg",
+      "order": 49
+    },
+    {
+      "slug": "durga-lakshmi-saraswati-mandir-59",
+      "name_en": "Durga-Lakshmi-Saraswati mandir",
+      "name_te": "దుర్గా-లక్ష్మి-సరస్వతి మందిరం",
+      "description_en": "Grand pillared pooja mandir with carved Durga, Lakshmi and Saraswati arches, arched glass doors and turned columns.",
+      "description_te": "చెక్కిన దుర్గా, లక్ష్మి, సరస్వతి ఆర్చ్‌లు, ఆర్చ్ గ్లాస్ తలుపులు, తిప్పిన స్తంభాలతో గొప్ప పిల్లర్డ్ పూజ మందిరం.",
+      "category": "pooja-doors-cnc",
+      "image": "IMG20260817WA0032.jpg",
+      "order": 50
+    },
+    {
+      "slug": "reeded-glass-bell-motif-door-69",
+      "name_en": "Reeded glass bell-motif door",
+      "name_te": "రీడెడ్ గ్లాస్ గంట డిజైన్ డోర్",
+      "description_en": "Reeded-glass double door with a centre band of brass bell motifs in a golden-lit backdrop.",
+      "description_te": "బంగారు వెలుతురు నేపథ్యంలో మధ్యలో ఇత్తడి గంట డిజైన్ బ్యాండ్‌తో రీడెడ్ గ్లాస్ డబుల్ డోర్.",
+      "category": "pooja-doors-cnc",
+      "image": "reeded-glass-bell-motif-door.jpg",
+      "order": 51
     },
     {
       "slug": "mesh-safety-door-28",
@@ -354,7 +554,7 @@
       "description_te": "టేకు ఫ్రేమ్, స్టీల్ మెష్ ప్యానెళ్లు, ఇత్తడి ఫిట్టింగ్స్.",
       "category": "windows",
       "image": "IMG_20240813_153846.jpg",
-      "order": 32
+      "order": 52
     },
     {
       "slug": "mesh-double-door-29",
@@ -364,7 +564,7 @@
       "description_te": "వరండా, ముఖద్వారాలకు డార్క్ టేకులో పూర్తి ఎత్తు మెష్ షట్టర్లు.",
       "category": "windows",
       "image": "IMG_20250221_154114.jpg",
-      "order": 33
+      "order": 53
     },
     {
       "slug": "fluted-door-with-mesh-sides-30",
@@ -374,7 +574,87 @@
       "description_te": "గాలి ఆడేలా మెష్ సైడ్ ప్యానెళ్లతో గ్రూవ్ టేకు షట్టర్లు.",
       "category": "windows",
       "image": "IMG_20250529_120831.jpg",
-      "order": 34
+      "order": 54
+    },
+    {
+      "slug": "vertical-grill-utility-door-56",
+      "name_en": "Vertical grill utility door",
+      "name_te": "వర్టికల్ గ్రిల్ యుటిలిటీ డోర్",
+      "description_en": "Teak double door with vertical wood-slat grills for airflow, paired with a matching louvred side window.",
+      "description_te": "గాలి ఆడేలా నిలువు చెక్క స్లాట్ గ్రిల్స్‌తో టేకు డబుల్ డోర్, సరిపోలే లూవర్డ్ సైడ్ కిటికీతో.",
+      "category": "windows",
+      "image": "IMG20260817WA0018.jpg",
+      "order": 55
+    },
+    {
+      "slug": "walnut-aluclad-casement-window-60",
+      "name_en": "Walnut aluclad casement window",
+      "name_te": "వాల్‌నట్ అల్యూక్లాడ్ కేస్‌మెంట్ కిటికీ",
+      "description_en": "Twin-sash casement window in a walnut wood-finish frame, with a built-in roller shade and matching handles.",
+      "description_te": "వాల్‌నట్ వుడ్-ఫినిష్ ఫ్రేమ్‌లో రెండు సాష్‌ల కేస్‌మెంట్ కిటికీ, బిల్ట్-ఇన్ రోలర్ షేడ్, సరిపోలే హ్యాండిల్స్‌తో.",
+      "category": "windows",
+      "image": "walnut-aluclad-casement-window.jpg",
+      "order": 56
+    },
+    {
+      "slug": "ribbed-glass-cottage-window-61",
+      "name_en": "Ribbed-glass cottage window",
+      "name_te": "రిబ్డ్ గ్లాస్ కాటేజ్ కిటికీ",
+      "description_en": "Wood-frame twin casement window with horizontal wood glazing bars over ribbed glass.",
+      "description_te": "అడ్డ చెక్క గ్లేజింగ్ బార్‌లు, రిబ్డ్ గ్లాస్‌తో రెండు సాష్‌ల చెక్క ఫ్రేమ్ కిటికీ.",
+      "category": "windows",
+      "image": "ribbed-glass-cottage-window.jpg",
+      "order": 57
+    },
+    {
+      "slug": "triple-panel-louvered-glass-window-62",
+      "name_en": "Triple-panel louvered glass window",
+      "name_te": "మూడు ప్యానెల్ లూవర్డ్ గ్లాస్ కిటికీ",
+      "description_en": "Three-panel teak window with tinted louvered glass strips for light and privacy together.",
+      "description_te": "టింటెడ్ లూవర్డ్ గ్లాస్ స్ట్రిప్‌లతో మూడు ప్యానెళ్ల టేకు కిటికీ, వెలుతురు, ప్రైవసీ రెండూ.",
+      "category": "windows",
+      "image": "triple-panel-louvered-glass-window.jpg",
+      "order": 58
+    },
+    {
+      "slug": "triple-panel-crossbar-window-63",
+      "name_en": "Triple-panel cross-bar window",
+      "name_te": "మూడు ప్యానెల్ క్రాస్-బార్ కిటికీ",
+      "description_en": "Three-panel teak window with a horizontal cross-bar glazing pattern, fitted into a marble-clad opening.",
+      "description_te": "మార్బుల్ అమర్చిన ఓపెనింగ్‌లో అడ్డ క్రాస్-బార్ గ్లేజింగ్ డిజైన్‌తో మూడు ప్యానెళ్ల టేకు కిటికీ.",
+      "category": "windows",
+      "image": "triple-panel-crossbar-window.jpg",
+      "order": 59
+    },
+    {
+      "slug": "combination-door-window-unit-64",
+      "name_en": "Combination door-window unit",
+      "name_te": "కాంబినేషన్ డోర్-విండో యూనిట్",
+      "description_en": "Teak combination unit pairing an arched-glass door with a fixed window and louvred vents above and below.",
+      "description_te": "ఆర్చ్ గ్లాస్ డోర్, ఫిక్స్‌డ్ కిటికీ, పైన కింద లూవర్డ్ వెంట్‌లతో టేకు కాంబినేషన్ యూనిట్.",
+      "category": "windows",
+      "image": "combination-door-window-unit.jpg",
+      "order": 60
+    },
+    {
+      "slug": "two-light-glass-window-65",
+      "name_en": "Two-light glass window",
+      "name_te": "టూ-లైట్ గ్లాస్ కిటికీ",
+      "description_en": "Twin casement window with a two-light glass division per sash and a transom light above.",
+      "description_te": "ప్రతి సాష్‌కు రెండు గ్లాస్ డివిజన్లు, పైన ట్రాన్సమ్ లైట్‌తో రెండు సాష్‌ల కిటికీ.",
+      "category": "windows",
+      "image": "two-light-glass-window.jpg",
+      "order": 61
+    },
+    {
+      "slug": "striped-glass-window-granite-recess-66",
+      "name_en": "Striped-glass window in granite recess",
+      "name_te": "గ్రానైట్ రీసెస్‌లో స్ట్రైప్డ్-గ్లాస్ కిటికీ",
+      "description_en": "Twin casement window with etched striped-glass panels, set into a granite-lined wall recess.",
+      "description_te": "గ్రానైట్ లైన్డ్ వాల్ రీసెస్‌లో అమర్చిన ఎచ్డ్ స్ట్రైప్డ్-గ్లాస్ ప్యానెళ్లతో రెండు సాష్‌ల కిటికీ.",
+      "category": "windows",
+      "image": "striped-glass-window-granite-recess.jpg",
+      "order": 62
     }
   ]
 }
