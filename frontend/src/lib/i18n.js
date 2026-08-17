@@ -7,12 +7,12 @@ export function LanguageProvider({ children }) {
   const [lang, setLang] = useState('en');
 
   useEffect(() => {
-    const saved = localStorage.getItem('omvirat-lang');
+    const saved = localStorage.getItem('omsri-lang');
     if (saved) setLang(saved);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('omvirat-lang', lang);
+    localStorage.setItem('omsri-lang', lang);
     document.documentElement.lang = lang;
   }, [lang]);
 
@@ -33,9 +33,9 @@ export const UI = {
     navWork: 'Our Work', navCatalog: 'Catalog', navTeak: 'Why Teak', navGallery: 'Gallery',
     navReviews: 'Reviews', navCall: 'Call Now', navHome: 'Home', navVisit: 'Visit Us',
     all: 'All', enquire: 'Enquire about this →', viewCatalog: 'View full catalog →',
-    heroKicker: 'Karimnagar · Teak furniture & building works',
-    heroTitle: 'Teak furniture and doors, built by hand and delivered on time.',
-    heroBody: 'Om Virat makes beds, doors, seating and full interiors in seasoned teak, and takes on building and civil work alongside it. Our own carpenters handle every job from measurement to fitting.',
+    heroKicker: 'Karimnagar · Teak wood work & building works',
+    heroTitle: 'Teak wood work, furniture and doors, built by hand and delivered on time.',
+    heroBody: 'Om Sri Wooden Furniture, Building Works & Aluminium Works does teak wood work in Karimnagar — beds, doors, seating and full interiors in seasoned teak — and takes on building and aluminium work alongside it. Our own carpenters handle every job from measurement to fitting.',
     heroCta1: 'See the catalog', heroCta2: 'Visit the workshop',
     catTitle: 'Teak furniture & doors',
     catBody: 'Everything made to your measurements. Standard designs or your own drawing.',
@@ -43,7 +43,7 @@ export const UI = {
     catalogIntro: 'Work we have completed and deliver regularly. Every piece is made to your measurements in seasoned teak, or in veneer where you want to keep the budget down.',
     contactTitle: 'Come see the wood',
     contactBody: 'Walk in to check the timber, the joints and the finish before you order. Call ahead and we will keep samples ready.',
-    lblPhone: 'Phone', lblWorkshop: 'Workshop', lblHours: 'Hours',
+    lblPhone: 'Phone', lblWorkshop: 'Workshop', lblHours: 'Hours', lblProprietor: 'Proprietor',
     hoursVal: 'Monday–Saturday, 9am–8pm', btnCall: 'Call 98495 23572', mapTitle: 'Open in Google Maps',
     skip: 'Skip to main content',
     waEnquireMsg: "Hi, I'm interested in {name}. Please share details."
@@ -55,7 +55,7 @@ export const UI = {
     all: 'అన్నీ', enquire: 'దీని గురించి అడగండి →', viewCatalog: 'పూర్తి కేటలాగ్ →',
     heroKicker: 'కరీంనగర్ · టేకు ఫర్నిచర్ & బిల్డింగ్ వర్క్స్',
     heroTitle: 'చేతితో తయారు చేసిన టేకు ఫర్నిచర్, తలుపులు — సమయానికి డెలివరీ.',
-    heroBody: 'ఓం విరాట్ సీజన్డ్ టేకుతో మంచాలు, తలుపులు, సోఫాలు, పూర్తి ఇంటీరియర్స్ తయారు చేస్తుంది. కొలత నుంచి ఫిట్టింగ్ వరకు మా సొంత వడ్రంగులే చూసుకుంటారు.',
+    heroBody: 'ఓం శ్రీ వుడెన్ ఫర్నిచర్, బిల్డింగ్ వర్క్స్ & అల్యూమినియం వర్క్స్ కరీంనగర్‌లో టేకు వర్క్ చేస్తుంది — సీజన్డ్ టేకుతో మంచాలు, తలుపులు, సోఫాలు, పూర్తి ఇంటీరియర్స్ తయారు చేస్తుంది. కొలత నుంచి ఫిట్టింగ్ వరకు మా సొంత వడ్రంగులే చూసుకుంటారు.',
     heroCta1: 'కేటలాగ్ చూడండి', heroCta2: 'వర్క్‌షాప్‌కు రండి',
     catTitle: 'టేకు ఫర్నిచర్ & తలుపులు',
     catBody: 'అన్నీ మీ కొలతల ప్రకారం. మా డిజైన్లు లేదా మీ డ్రాయింగ్.',
@@ -63,7 +63,7 @@ export const UI = {
     catalogIntro: 'మేము పూర్తి చేసిన పనులు. ప్రతి వస్తువు మీ కొలతల ప్రకారం సీజన్డ్ టేకుతో తయారు చేస్తాం.',
     contactTitle: 'కలపను స్వయంగా చూడండి',
     contactBody: 'ఆర్డర్ ఇచ్చే ముందు కలప, జాయింట్లు, ఫినిషింగ్ చూసి నిర్ణయించుకోండి.',
-    lblPhone: 'ఫోన్', lblWorkshop: 'వర్క్‌షాప్', lblHours: 'సమయాలు',
+    lblPhone: 'ఫోన్', lblWorkshop: 'వర్క్‌షాప్', lblHours: 'సమయాలు', lblProprietor: 'యజమాని',
     hoursVal: 'సోమవారం–శనివారం, ఉ.9 – రా.8', btnCall: '98495 23572 కు కాల్', mapTitle: 'గూగుల్ మ్యాప్స్‌లో చూడండి',
     skip: 'ప్రధాన కంటెంట్‌కు వెళ్లండి',
     waEnquireMsg: '{name} గురించి తెలుసుకోవాలనుకుంటున్నాను. దయచేసి వివరాలు పంపండి.'

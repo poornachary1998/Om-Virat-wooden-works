@@ -23,7 +23,7 @@ export default function CategoryGrid({ categories }) {
                 ratio="4x5"
                 images={cat.images.map((im) => ({
                   url: im.url,
-                  alt: pick(im, 'name', lang) + ' — teak, made in Karimnagar by Om Virat'
+                  alt: pick(im, 'name', lang) + ' — teak, made in Karimnagar by Om Sri'
                 }))}
               />
               <div className="cat-body">

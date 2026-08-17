@@ -14,6 +14,7 @@ export default function Contact() {
             <div><dt>{t.lblPhone}</dt><dd><a href="tel:+919849523572" style={{ fontWeight: 600 }}>98495 23572</a></dd></div>
             <div><dt>{t.lblWorkshop}</dt><dd>Karimnagar, Telangana</dd></div>
             <div><dt>{t.lblHours}</dt><dd>{t.hoursVal}</dd></div>
+            <div><dt>{t.lblProprietor}</dt><dd>Narsingoju Srinivas</dd></div>
           </dl>
           <div className="cta-row" style={{ marginTop: 28 }}>
             <a className="cta" href="tel:+919849523572">{t.btnCall}</a>
@@ -24,7 +25,7 @@ export default function Contact() {
           <div className="map">
             <iframe
               src="https://maps.google.com/maps?q=18.4435501,79.1338994&z=16&output=embed"
-              title="Om Virat Wooden Furniture — location on Google Maps"
+              title="Om Sri Wooden Furniture — location on Google Maps"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

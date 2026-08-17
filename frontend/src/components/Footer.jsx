@@ -6,13 +6,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="wrap">
         <div className="footer-brand">
-          <Image src="/logo-mark.png" alt="Om Virat" width={40} height={40} className="logo-mark" />
-          <strong>Om Virat Wooden Furniture, Building Works &amp; Aluminium Works</strong>
+          <Image src="/logo-mark.png" alt="Om Sri" width={40} height={40} className="logo-mark" />
+          <strong>Om Sri Wooden Furniture, Building Works &amp; Aluminium Works</strong>
         </div>
         <span>Karimnagar · 98495 23572</span>
       </div>
       <div className="wrap footer-sub">
-        <span>&copy; {year} Om Virat Wooden Furniture, Building Works &amp; Aluminium Works. All rights reserved.</span>
+        <span>&copy; {year} Om Sri Wooden Furniture, Building Works &amp; Aluminium Works. Proprietor: Narsingoju Srinivas. All rights reserved.</span>
         <span>Built with Next.js &amp; Strapi</span>
       </div>
     </footer>
