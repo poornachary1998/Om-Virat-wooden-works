@@ -1,24 +1,14 @@
-databases:
-  - name: om-virat-strapi-db
-    plan: basic-256mb
-    region: singapore
-    postgresMajorVersion: "16"
-
 services:
   - type: web
     name: om-virat-strapi
     runtime: docker
-    plan: starter
+    plan: free
     region: singapore
     rootDir: strapi
     dockerfilePath: ./Dockerfile
     dockerContext: .
     autoDeploy: true
     healthCheckPath: /_health
-    disk:
-      name: strapi-uploads
-      mountPath: /opt/app/public/uploads
-      sizeGB: 1
     envVars:
       - key: NODE_ENV
         value: production
@@ -29,13 +19,15 @@ services:
       - key: DATABASE_CLIENT
         value: postgres
       - key: DATABASE_URL
-        fromDatabase:
-          name: om-virat-strapi-db
-          property: connectionString
+        sync: false
       - key: DATABASE_SSL
         value: "true"
-      - key: DATABASE_SSL_REJECT_UNAUTHORIZED
-        value: "false"
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
       - key: APP_KEYS
         generateValue: true
       - key: API_TOKEN_SALT
