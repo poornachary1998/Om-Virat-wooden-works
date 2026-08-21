@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { useLang, UI, pick } from '@/lib/i18n';
 import Lightbox from './Lightbox';
 
-export default function CatalogGrid({ categories, items }) {
+export default function CatalogGrid({ categories, items, initialFilter = 'all' }) {
   const { lang } = useLang();
   const t = UI[lang];
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState(initialFilter);
   const [zoomed, setZoomed] = useState(null);
 
   const shown = filter === 'all' ? items : items.filter((it) => it.category === filter);
